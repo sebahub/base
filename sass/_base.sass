@@ -1,3 +1,4 @@
+
 body
     text-align: center
 
@@ -115,14 +116,19 @@ p
     
 .cards
     margin-bottom: 100px
+    .cardwrapper
+        display: flex
+        justify-content: space-around
+        article
+            display: flex
+            flex-direction: column
+        
 
 .qoutecard
     width: 430px
     height: 600px
-    margin: auto
     border: 1px solid rgba(0, 0, 0, 0.1)
     box-shadow: $boxsh2
-    margin-bottom: 2rem
 
     .card1_frame
         width: 90%
@@ -139,15 +145,15 @@ p
             box-shadow: $boxsh2
         .border
             position: relative
-            top: 65px
+            top: 35px
             left: 10px
             width: 6rem
-            height: 1em
+            height: 1rem
             background-color: $schmuckfarbe
             float: left
         h2
             text-align: left
-            padding-top: 3rem
+            padding-top: 1rem
             padding-left: 1rem
             text-transform: uppercase
             
@@ -171,28 +177,75 @@ p
 
 .kontaktcard
     width: 430px
-    height: 600px
-    margin: auto
+    height: 280px
     border: 1px solid rgba(0, 0, 0, 0.1)
     box-shadow: $boxsh2
+    margin-bottom: 40px
 
     .card1_frame
         width: 90%
-        height: 92.5%
+        height: 85.5%
         margin: 5%
         background: $secondary-color
         box-shadow: $boxsh1
         .border
             position: relative
-            top: 65px
+            top: 35px
             left: 10px
             width: 6rem
-            height: 1em
+            height: 1rem
             background-color: $schmuckfarbe
             float: left
         h2
             text-align: left
-            padding-top: 3rem
+            padding-top: 1rem
+            padding-left: 1rem
+            text-transform: uppercase
+            color: white
+        p
+            color: white
+            text-align: left
+            margin-top: -5px
+.social
+    margin-top: -150px
+    margin-left: 60%
+    width: 35%
+    
+    
+    img
+        width: 40px
+        margin-left: 10px
+            
+            
+
+
+.soundcard
+    width: 430px
+    height: 280px
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    box-shadow: $boxsh2
+
+    .card1_frame
+        width: 90%
+        height: 85.5%
+        margin: 5%
+        background: $secondary-color
+        box-shadow: $boxsh1
+        .soundcloud
+            width: 95%
+            margin: auto
+            margin-top: 55px
+        .border
+            position: relative
+            top: 35px
+            left: 10px
+            width: 6rem
+            height: 1rem
+            background-color: $schmuckfarbe
+            float: left
+        h2
+            text-align: left
+            padding-top: 1rem
             padding-left: 1rem
             text-transform: uppercase
             color: white
@@ -200,8 +253,31 @@ p
             
 
 
-                
-                
+
+//.onewrapper
+    display: flex
+    //article
+        flex-wrap: no-wrap
+        
+//.one
+    width: 430px
+    height: 600px
+    background: red
+
+
+//.two
+    width: 430px
+    height: 250px
+    background-color: yellow
+    //margin-left: 20px
+    margin-bottom: 10px
+
+//.three
+    width: 430px
+    height: 250px
+    background-color: blue
+    //margin-left: 20px
+    display: block
             
         
 
@@ -211,10 +287,3 @@ p
             
 
 
-            
-        
-
-    
-    
-    
-    
