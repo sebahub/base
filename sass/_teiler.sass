@@ -4,10 +4,10 @@
     justify-content: center
     
     .teiler_big
-        width: 500px
-        height: 500px
+        width: 50%
+        height: 50%
         text-align: left
-        background-image: url(/bilder/cover.jpeg)
+        background-image: url(../bilder/cover.jpeg)
         background-size: 100%
         img
             width: 500px
@@ -16,14 +16,21 @@
             text-align: center
             font-size: 3rem
         .after
-            margin-top: 375px
+
             width: 100%
-            height: 125px
-            display: none
+            opacity: 0
+            height: 0
+            background: none
+            transition: background 0.2s ease
+            color: white
+            
         &:hover
             .after
-                display: block
-                background: rgba(255, 255, 255, 0.8)
+                opacity: 1
+                background: rgba(0, 0, 0, 0.5)
+                height: 250px
+                margin-top: 250px
+                padding-top: 50px
             
     
             
@@ -35,7 +42,7 @@
             height: 250px
         
         .teiler_sml
-            background: url(/bilder/the_band.jpeg)
+            background: url(../bilder/the_band.jpeg)
             background-size: cover
             background-position: center
         
@@ -76,21 +83,39 @@
             width: 100px
         
     .teiler_xs2
-        background: url(/bilder/zawinul.jpeg)
+        background: url(../bilder/zawinul.jpeg)
         background-position: center
         background-size: 250px
 
         
     .teiler_xs3
-        background: url(/bilder/zappa.jpeg)
+        background: url(../bilder/zappa.jpeg)
         background-position: center
         background-size: auto 250px
 
     .teiler_xs4
-        background: url(/bilder/duke.jpeg)
+        background: url(../bilder/duke.jpeg)
         background-position: center
         background-size: 250px
-
+        
+@media screen and (max-width: $medium)
+    .teiler
+        display: block
+        width: 100%
+        max-height: 100%
+        background-repeat: no-repeat
+        .after
+            display: none
+        .teiler_big
+            width: 100%
+            margin: auto
+        article
+            width: 100%
+            
+#four
+    img
+        width: 50%
+        max-width: 500px
         
         
         

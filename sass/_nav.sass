@@ -17,14 +17,19 @@
     nav
 
         ul
-            margin-left: 55%
+            margin-left: 50%
             padding-top: 13px
             li
                 float: left
-                margin-right: 10%
+                margin-left: 10%
                 color: black
                 text-transform: uppercase
                 font-family: $paragraph
+                a:last-child
+                    margin-right: 0
+                
+
+
                 
 .topbar.small
     height: 50px
@@ -36,3 +41,7 @@
     nav
         ul
             padding-top: 0
+            
+@media screen and (max-width: $medium)
+    nav
+        display: none
